@@ -1,0 +1,4 @@
+/* Sketchfab code */
+$pattern[]="/<iframe width=\"([0-9]+)\" height=\"([0-9]+)\" src=\"https:\/\/sketchfab\.com\/embed\/([a-zA-Z0-9]+)\?autostart=0&transparent=0&autospin=0&controls=0&watermark=1\" frameborder=\"0\" webkitallowfullscreen=\"true\" mozallowfullscreen=\"true\" allowfullscreen><\/iframe>/";
+$replacement[]="[sketchfab]\\3[/sketchfab]";
+/* --Sketchfab code */
