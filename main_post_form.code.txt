@@ -22,7 +22,7 @@ function sketchfabInsertBBCode() {
     if (modelId = sketchfabPopup()) {
         return paste_strinL(selektion,4,'[sketchfab]' + modelId + '[/sketchfab]\n', '', '');
     }
-    return false;
+    return;
 }
 //-->
 </script> 
