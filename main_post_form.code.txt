@@ -9,13 +9,13 @@ function sketchfabPopup() {
     }
 
     url = url.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
-    var regexp = /^(http|https):\/\/sketchfab.com\/show\/(.+)$/;
+    var regexp = /^(http|https):\/\/sketchfab.com\/(show|models)\/([^/]+)$/;
     if (!regexp.test(url)) {
         alert('Invalid model URL');
         sketchfabPopup();
     }
     var modelId = url.substring(url.lastIndexOf('/') + 1);
-    return modelId;    
+    return modelId;
 }
 
 function sketchfabInsertBBCode() {
@@ -25,7 +25,7 @@ function sketchfabInsertBBCode() {
     return;
 }
 //-->
-</script> 
+</script>
 <!--BBJSBUTTONS-->
 <a href="JavaScript:sketchfabInsertBBCode()" onmouseover="window.status='Embed a 3D model'; return true" onmouseout="window.status=''; return true" onmousemove="pasteSel()"><img src="{$main_url}/img/button_sketchfab.gif" style="width:22px;height:22px" alt="Embed a Sketchfab 3D model" title="Embed a Sketchfab 3D model" /></a>&nbsp;&nbsp;
 <!--/BBJSBUTTONS-->
